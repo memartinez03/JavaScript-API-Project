@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="main.css">
+<script src="main.js" defer></script>
+<title>Chicago Art Institute API</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Images from the Chicago Art Institute</h1>
+        <h4 class="text-center">Click on a photo to learn more information about the artwork.</h4>
+        <div class="gallery container">
+            <div class="row">
+                <figure class="col-md" id="fig1" onclick="event.stopPropagation(); getPainting(this.id, event)">
+                    <img src="/static/images/Water Lilies.jpg" id="16568" alt="Water lilies sitting on a pond" class="gallery_img img-fluid border rounded">
+                    <figcaption></figcaption>
+                </figure>
+                <figure class="gallery_item gallery_item-2 col-md" id="fig2" onclick="event.stopPropagation(); getPainting(this.id, event)">
+                    <img src="/static/images/Fishing Boats with Hucksters Bargaining for Fish.jpg" id="4796" alt="Fishing boats with hucksters bargaining for fish" class="gallery_img img-fluid border rounded">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+            <div class="row">
+                <figure class="gallery_item gallery_item-3 col-md" id="fig3" onclick="event.stopPropagation(); getPainting(this.id, event)">
+                    <img src="/static/images/The Monkey Antiquarian.jpg" id="8715" alt="The Monkey Antiquarian" class="gallery_img img-fluid border rounded">
+                    <figcaption></figcaption>
+                </figure>
+                <figure class="gallery_item gallery_item-4 col-md" id="fig4" onclick="event.stopPropagation(); getPainting(this.id, event)">
+                    <img src="/static/images/Hercules and the Lernaean Hydra.jpg" id="20579" alt="Hercules and the Lernaean Hydra" class="gallery_img img-fluid border rounded">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+            <div class="row">
+                <figure class="gallery_item gallery_item-5 col-md" id="fig5" onclick="event.stopPropagation(); getPainting(this.id, event)">
+                    <img src="/static/images/Paris Street; Rainy Day.jpg" id="20684" alt="Paris Street; Rainy Day" class="gallery_img img-fluid border rounded">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
